@@ -41,7 +41,7 @@ All antibody VH/VL sequences validated for correct framework features:
 ### Shared Data Repository
 
 All computational data for this bispecific program lives in the shared data room:
-**[Bispecific-BSP-02-ELRANATAMAB](https://github.com/nickharris808/Bispecific-BSP-02-ELRANATAMAB)**
+**[Bispecific-BSP-02-ELRANATAMAB](https://github.com/Vivamed-Biopharma/Bispecific-BSP-02-ELRANATAMAB)**
 
 | Directory | Files | Content |
 |-----------|-------|---------|
