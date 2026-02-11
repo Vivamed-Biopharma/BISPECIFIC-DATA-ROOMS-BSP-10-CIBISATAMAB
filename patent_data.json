@@ -1,0 +1,192 @@
+{
+  "part1_title_field": {
+    "title": "ENGINEERED ANTI-CEA/ANTI-CD3 BISPECIFIC ANTIBODIES WITH IMPROVED TOXICITY PROFILE",
+    "field": "The present invention relates to the field of biotechnology and oncology, and more specifically to engineered bispecific antibodies that selectively target tumor-associated glycoforms of carcinoembryonic antigen (CEA) for the treatment of cancer, such as colorectal cancer, with reduced toxicity."
+  },
+  "part2_background": "Cancer remains a leading cause of mortality worldwide, with colorectal cancer (CRC) being one of the most prevalent and deadly forms. Despite advances in surgery, chemotherapy, and targeted therapies, there is a significant unmet medical need for more effective and safer treatments for patients with advanced or metastatic CRC. Targeted immunotherapy, which harnesses the patient's own immune system to fight cancer, has emerged as a powerful therapeutic modality. One promising approach involves the use of bispecific T-cell engaging (TCE) antibodies. These molecules are engineered to simultaneously bind to a tumor-associated antigen (TAA) on cancer cells and to an activating receptor, such as CD3, on the surface of T-cells. This dual binding effectively creates a synapse between the T-cell and the cancer cell, leading to T-cell activation and potent, targeted killing of the cancer cell.\n\nCarcinoembryonic antigen (CEA), also known as CEACAM5, is a well-characterized TAA that is overexpressed in a variety of adenocarcinomas, particularly colorectal cancer. Its high expression on tumor cells and limited expression on normal tissues has made it an attractive target for cancer immunotherapy. Cibisatamab (also known as CEA-TCB, RG7802) is a bispecific antibody designed in a 2+1 format that targets CEA and CD3. Clinical studies have demonstrated that cibisatamab can induce T-cell-mediated lysis of CEA-expressing tumor cells and has shown signs of clinical activity. However, the development of cibisatamab and other CEA-targeting TCEs has been hampered by significant on-target, off-tumor toxicity. A major dose-limiting toxicity observed with cibisatamab is severe gastrointestinal (GI) toxicity, including diarrhea and colitis. This toxicity arises because, in addition to being overexpressed on tumor cells, CEA is also expressed at physiological levels on the apical surface of normal gastrointestinal epithelial cells. Consequently, systemically administered cibisatamab can engage T-cells against these healthy GI cells, leading to inflammatory damage and severe side effects that limit the achievable therapeutic window.\n\nThe central technical hurdle in developing a successful CEA-targeting TCE is to differentiate between the CEA expressed on tumor cells and the CEA expressed on healthy tissues. The prior art has largely failed to address this challenge. Conventional anti-CEA antibodies typically recognize peptide epitopes that are identical on both cancerous and normal cells, making such differentiation impossible. Attempts to mitigate toxicity have focused on modifying dosing schedules or formats to alter pharmacokinetics, but these approaches do not address the fundamental lack of tumor selectivity at the molecular recognition level. Therefore, a significant need exists for a novel therapeutic agent that can potently target and eliminate CEA-positive tumor cells while sparing healthy CEA-expressing tissues, thereby widening the therapeutic index and offering a safer, more effective treatment for patients with colorectal cancer and other CEA-positive malignancies. The present invention addresses this long-felt and unmet need by providing an antibody engineered to selectively recognize a structural feature unique to tumor-associated CEA.",
+  "part3_summary": "The present invention provides a solution to the problem of on-target, off-tumor toxicity associated with prior art CEA-targeting T-cell engagers. The invention is based on the discovery and engineering of bispecific antibodies that selectively bind to a tumor-associated glycoform of carcinoembryonic antigen (CEA) while exhibiting significantly reduced binding to CEA expressed on normal, healthy cells, such as gastrointestinal epithelial cells. This selectivity is achieved by designing an antigen-binding domain that recognizes an epitope comprising both the polypeptide backbone and aberrant glycan structures present on CEA in the tumor microenvironment but absent from CEA on normal tissues.\n\nIn one aspect, the invention provides an isolated bispecific antibody comprising a first antigen-binding domain that selectively binds to a tumor-associated glycoform of human CEA and a second antigen-binding domain that binds to human CD3. This glycoform-selective binding results in an improved safety profile, minimizing gastrointestinal toxicity while preserving potent anti-tumor efficacy. The antibodies of the invention may be configured in various formats, including but not limited to, IgG-scFv, diabody, or other multivalent formats. The invention also provides the specific amino acid sequences for the heavy chain variable (VH) and light chain variable (VL) regions, and the complementarity-determining regions (CDRs) thereof, that confer this novel glycoform selectivity. The antibodies described herein demonstrate favorable developability characteristics, including high thermal stability and solubility, as predicted by advanced computational modeling. The invention further provides pharmaceutical compositions comprising these novel antibodies and a pharmaceutically acceptable carrier, as well as methods for using these antibodies and compositions to treat CEA-expressing cancers, particularly colorectal cancer, in a subject in need thereof.",
+  "part4_detailed_description": [
+    {
+      "heading": "Definitions",
+      "text": "Unless defined otherwise, all technical and scientific terms used herein have the same meaning as commonly understood by one of ordinary skill in the art to which this invention belongs. The term 'antibody' as used herein is intended to include whole antibodies, monoclonal antibodies, polyclonal antibodies, multispecific antibodies (e.g., bispecific antibodies), and antibody fragments, so long as they exhibit the desired biological activity. An 'antibody fragment' comprises a portion of a whole antibody, generally the antigen-binding or variable region thereof. Examples of antibody fragments include Fab, Fab', F(ab')2, and Fv fragments; diabodies; linear antibodies; single-chain antibody molecules (e.g., scFv); and multispecific antibodies formed from antibody fragments. The term 'bispecific antibody' refers to an antibody having binding specificities for at least two different epitopes. In the context of the present invention, the bispecific antibody binds to a tumor-associated glycoform of CEA and to human CD3. The term 'carcinoembryonic antigen' or 'CEA' refers to the protein also known as CEACAM5. 'Tumor-associated glycoform of CEA' refers to a CEA molecule that bears one or more glycan structures that are preferentially or exclusively found on CEA expressed by cancer cells compared to CEA expressed by non-cancerous cells. Such differences can include, but are not limited to, changes in sialylation, fucosylation, or the presence of truncated O-glycans such as the Tn or sialyl-Tn antigen. 'Selectively binds' means that the antibody binds to the tumor-associated glycoform of CEA with a significantly higher affinity than to CEA from normal, non-cancerous tissue. 'CD3' refers to the T-cell co-receptor protein complex. Binding to CD3 engages and activates T-cells. The term 'treating' or 'treatment' of a condition includes preventing the condition, slowing the onset or rate of development of the condition, reducing the risk of developing the condition, preventing or delaying the development of symptoms associated with the condition, reducing or ending symptoms associated with the condition, generating a complete or partial regression of the condition, or some combination thereof."
+    },
+    {
+      "heading": "Engineered Glycoform-Selective Bispecific Antibodies",
+      "text": "The present invention provides a novel class of bispecific T-cell engaging antibodies designed to overcome the critical limitation of on-target, off-tumor toxicity that has plagued the development of CEA-targeted immunotherapies. The core of the invention lies in the engineering of a CEA-binding domain that does not merely recognize a peptide sequence, but instead recognizes a conformational epitope presented only on tumor cells. This epitope is a composite of the CEA protein backbone and specific, aberrant carbohydrate structures (glycans) that are enzymatically added to proteins during post-translational modification. It is well-established that the process of glycosylation is often altered in cancer cells, leading to the expression of proteins with unique glycan profiles. The antibodies of the invention exploit this fundamental biological difference between cancer cells and normal cells.\n\nThe CEA-binding arm of the inventive antibody is engineered to have a paratope that makes critical contacts with these tumor-specific glycans. This results in high-affinity binding to CEA on the surface of cancer cells, such as those in a colorectal tumor. Conversely, the same antibody exhibits low-affinity binding, or effectively no binding, to CEA expressed on healthy tissues, such as the gastrointestinal lining, because the CEA on these cells lacks the specific glycan structures required for recognition. This differential affinity is the key to the antibody's improved safety profile. By preferentially accumulating in the tumor and mediating T-cell killing there, while ignoring the CEA on healthy tissues, the antibody uncouples the therapeutic effect from the dose-limiting toxicity. The second arm of the bispecific antibody is an anti-CD3 binding domain, which serves to recruit and activate cytotoxic T-lymphocytes. This domain can be derived from known anti-CD3 antibodies and may be formatted as an scFv, Fab, or other suitable fragment. The overall architecture of the bispecific antibody can be varied, for instance, a '2+1' format where two CEA-binding Fab arms are linked to a single anti-CD3 binding moiety on an IgG scaffold. This format can provide avidity benefits for tumor targeting while maintaining a favorable pharmacokinetic profile."
+    },
+    {
+      "heading": "Computational Design and In Silico Enablement",
+      "text": "The antibodies of the invention were developed using a sophisticated, state-of-the-art computational design and validation pipeline. This in silico approach provides a robust and detailed enablement for the claimed compositions, demonstrating that the molecules were not arrived at by chance but are the product of rational design aimed at solving a specific technical problem. The process began with high-resolution structural modeling of different glycoforms of the CEA N-terminal domain complexed with a starting antibody scaffold, which resembles known anti-CEA antibodies such as Sm3e. The structures were predicted using Boltz-2, an advanced protein structure prediction algorithm derived from AlphaFold3, capable of accurately modeling complex protein-glycan interactions. Putative tumor-specific glycan structures and normal glycan structures were modeled onto the CEA protein.\n\nWith these high-fidelity structural models, the antibody-antigen interface was analyzed. A generative protein design algorithm, ProteinMPNN, coupled with a diffusion model (RFdiffusion), was used to redesign the amino acid sequence of the antibody's CDRs. The design process was constrained to favor interactions with the tumor-associated glycans while disfavoring interactions with the normal glycans. This generated a library of candidate sequences predicted to have the desired glycoform selectivity. Each designed variant was then subjected to rigorous in silico validation. Binding poses and relative affinities were calculated using the DiffDock-L docking algorithm. The change in binding free energy (\u0394\u0394G) upon mutation was calculated using tools like EvoEF2 to confirm that the designed mutations enhanced binding to the target glycoform.\n\nCrucially, the variants were also screened for essential developability properties to ensure they would be viable as therapeutic candidates. Aggregation propensity was assessed using Aggrescan3D, which identifies aggregation-prone regions (APRs) on the protein surface. Candidates with significant APRs were eliminated. Aqueous solubility was predicted using the NetSolP algorithm, with a target solubility score of greater than 0.85. Thermal stability was predicted using ThermoMPNN to calculate the melting temperature (Tm), with a target of greater than 65\u00b0C to ensure the protein is stable under physiological and storage conditions. Finally, potential immunogenicity was evaluated using the DeepImmuno platform, which predicts T-cell epitopes to minimize the risk of an anti-drug antibody response in patients. This comprehensive in silico workflow enabled the identification of lead candidates, such as BSP-10-CIBISATAMAB, with an optimal balance of high-affinity, selective binding and excellent drug-like properties, providing strong evidence of utility and reduction to practice."
+    },
+    {
+      "heading": "Pharmaceutical Compositions and Methods of Use",
+      "text": "The present invention further provides pharmaceutical compositions containing the glycoform-selective bispecific antibodies described herein. Such compositions typically comprise the antibody and a pharmaceutically acceptable carrier. A 'pharmaceutically acceptable carrier' includes any and all solvents, dispersion media, coatings, antibacterial and antifungal agents, isotonic and absorption delaying agents, and the like that are physiologically compatible. The compositions may be formulated for parenteral administration, such as intravenous, subcutaneous, intramuscular, or intraperitoneal injection or infusion. Formulations for injection may be presented in unit dosage form, e.g., in ampoules or in multi-dose containers, with an added preservative. The compositions may take such forms as suspensions, solutions or emulsions in oily or aqueous vehicles, and may contain formulatory agents such as suspending, stabilizing and/or dispersing agents. The antibody concentration in the composition can vary widely, from less than about 0.1% to as much as 20% by weight. The invention also provides methods for treating a CEA-expressing cancer in a subject. The method comprises administering to the subject a therapeutically effective amount of the antibody or pharmaceutical composition of the invention. A 'therapeutically effective amount' is an amount sufficient to elicit a desired biological or medical response, such as inhibition of tumor growth, tumor regression, or improvement in survival. The cancer to be treated is preferably colorectal cancer, but may include other CEA-expressing malignancies such as gastric, pancreatic, lung, or breast cancer. The administration of the antibody of the invention is expected to result in fewer or less severe side effects, particularly gastrointestinal toxicity, compared to treatment with non-selective CEA-targeting T-cell engagers like cibisatamab."
+    }
+  ],
+  "part5_examples": [
+    {
+      "id": "Example 1",
+      "type": "actual",
+      "text": "Computational Design and In Silico Validation of Glycoform-Selective Anti-CEA/CD3 Bispecific Antibody BSP-10-CIBISATAMAB. A rational design strategy was executed to engineer a bispecific antibody with selective affinity for tumor-associated glycoforms of CEA. The process was initiated by generating high-resolution 3D structural models of the N-terminal domain of human CEA. Using the Boltz-2 algorithm, an advanced deep learning model based on AlphaFold3, distinct models were created representing both a heavily glycosylated form characteristic of colorectal cancer cells and a form with glycosylation patterns typical of normal colonic epithelia. A template antibody variable domain, sharing framework regions with the known anti-CEA antibody Sm3e, was used as a starting scaffold. The computational design cycle focused on re-engineering the CDR loops of this scaffold to create a paratope that specifically recognizes the tumor-associated glycan structures. The ProteinMPNN algorithm was employed to suggest amino acid substitutions in the CDRs that would be structurally compatible and likely to form favorable interactions (e.g., hydrogen bonds, hydrophobic contacts) with the tumor-specific glycans. These designs were refined using the RFdiffusion model to ensure the overall fold and stability of the variable domain were maintained. The resulting library of designed variants was then rigorously screened. The DiffDock-L tool was used to predict the binding pose and estimate the binding affinity of each variant to both the tumor and normal CEA glycoforms. Variants showing a strong predicted preference for the tumor glycoform were advanced to a multi-parameter developability assessment. The Aggrescan3D server was used to calculate surface aggregation propensity, and variants with high-risk patches were discarded. The NetSolP algorithm predicted the intrinsic aqueous solubility, with a selection threshold of >0.85. Thermal stability was estimated via ThermoMPNN, with a requirement for a predicted Tm of >65\u00b0C. Finally, immunogenicity was assessed with DeepImmuno to minimize potential T-cell epitopes. This comprehensive in silico pipeline led to the selection of the lead candidate, designated BSP-10-CIBISATAMAB, which demonstrated a superior predicted profile of high--affinity, selective binding to tumor-glycoform CEA and excellent drug-like properties."
+    },
+    {
+      "id": "Example 2",
+      "type": "prophetic",
+      "text": "Expression and Purification of BSP-10-CIBISATAMAB. The amino acid sequences encoding the heavy chain and light chain of the glycoform-selective anti-CEA binding arm, and the sequence for the anti-CD3 scFv of BSP-10-CIBISATAMAB, identified in Example 1, will be chemically synthesized and cloned into a mammalian expression vector. The vector will be designed to express a 2+1 formatted bispecific antibody, comprising a full-length IgG1 molecule where the C-terminus of one heavy chain is fused via a flexible linker to the anti-CD3 scFv. The final construct will be sequence-verified to ensure accuracy. For production, the expression vector will be transiently transfected into a high-yield mammalian cell line, such as ExpiCHO-S cells, using an appropriate transfection reagent like PEI or a commercial kit. The transfected cells will be cultured in a chemically defined, serum-free medium at 37\u00b0C with 8% CO2 and shaking. Cell culture supernatants containing the secreted bispecific antibody will be harvested approximately 5-7 days post-transfection. The antibody will be purified from the clarified supernatant using a standard two-step chromatography process. First, the supernatant will be loaded onto a Protein A affinity chromatography column. The antibody will bind to the resin, while host cell proteins and other impurities flow through. After washing, the bound antibody will be eluted using a low-pH buffer (e.g., 0.1 M glycine, pH 3.0) and immediately neutralized. Second, the eluate from the Protein A column will be further purified by size-exclusion chromatography (SEC) to remove aggregates and other size variants. The purity and integrity of the final BSP-10-CIBISATAMAB product will be assessed by SDS-PAGE under reducing and non-reducing conditions and by analytical SEC, with an expected purity of >95%."
+    },
+    {
+      "id": "Example 3",
+      "type": "prophetic",
+      "text": "Characterization of Binding Affinity and Glycoform Selectivity by Surface Plasmon Resonance. The binding kinetics and affinity of the purified BSP-10-CIBISATAMAB for different CEA glycoforms will be quantified using a surface plasmon resonance (SPR) biosensor, such as a Biacore instrument. Two forms of the CEA antigen will be used: 1) tumor-associated CEA (tCEA), purified from a human colorectal adenocarcinoma cell line (e.g., LoVo) known to produce hyperglycosylated CEA, and 2) normal CEA (nCEA), represented by recombinant CEA produced in a non-human mammalian cell line (e.g., CHO) which produces different glycosylation patterns, or by enzymatically deglycosylated tCEA. The anti-CEA/CD3 antibody will be captured on a sensor chip surface functionalized with an anti-human IgG antibody. A series of increasing concentrations of tCEA or nCEA will be flowed over the chip surface, and the association (kon) and dissociation (koff) rates will be measured in real-time. The equilibrium dissociation constant (KD), calculated as koff/kon, will be determined for the interaction with each antigen. The experiment will be designed to demonstrate the glycoform selectivity of BSP-10-CIBISATAMAB. It is expected that BSP-10-CIBISATAMAB will bind to tCEA with high affinity, with a KD in the low nanomolar to picomolar range. In contrast, it is expected to bind to nCEA with a significantly lower affinity (higher KD), or to show no measurable binding at all. A selectivity ratio (KD for nCEA / KD for tCEA) of at least 10-fold, and preferably greater than 50-fold or 100-fold, will confirm the desired target selectivity. As a control, the parental, non-selective antibody cibisatamab will be tested in parallel and is expected to bind to both tCEA and nCEA with similar high affinities."
+    },
+    {
+      "id": "Example 4",
+      "type": "prophetic",
+      "text": "In Vitro T-Cell Mediated Cytotoxicity Assay. The ability of BSP-10-CIBISATAMAB to mediate T-cell killing of CEA-positive cancer cells will be evaluated. Target cells will be a human colorectal cancer cell line that expresses high levels of tumor-associated CEA, such as HT-29 or LS174T. Effector cells will be human T-cells isolated from peripheral blood mononuclear cells (PBMCs) from healthy donors. Target cells will be plated in a 96-well plate. T-cells will be added at an effector-to-target (E:T) ratio of 10:1. A dilution series of BSP-10-CIBISATAMAB, a non-selective control antibody (e.g., parental cibisatamab), and an isotype control antibody will be added to the co-culture. The plates will be incubated for 48 hours at 37\u00b0C. Target cell lysis will be quantified by measuring the release of lactate dehydrogenase (LDH) into the supernatant using a commercially available colorimetric assay. The percentage of specific lysis will be calculated for each antibody concentration, and the data will be fitted to a sigmoidal dose-response curve to determine the half-maximal effective concentration (EC50). It is expected that BSP-10-CIBISATAMAB will induce potent, dose-dependent lysis of the CEA-positive cancer cells, with an EC50 value in the picomolar to low nanomolar range, comparable to that of the parental cibisatamab control. This result would demonstrate that the engineered selectivity does not compromise the antibody's fundamental T-cell engaging and cytotoxic function against the intended tumor target."
+    },
+    {
+      "id": "Example 5",
+      "type": "prophetic",
+      "text": "Assessment of Reduced On-Target, Off-Tumor Activity In Vitro. To demonstrate the improved safety profile of BSP-10-CIBISATAMAB, a cytotoxicity assay will be performed using cells that mimic the on-target, off-tumor setting of the gastrointestinal tract. Target cells will be either primary human colonic epithelial cells, which express physiological levels of normal CEA glycoforms, or an engineered cell line (e.g., HEK293) stably transfected to express full-length CEA with normal-like glycosylation. A T-cell mediated cytotoxicity assay will be conducted as described in Example 4, co-culturing these normal CEA-expressing cells with human T-cells in the presence of BSP-10-CIBISATAMAB or the non-selective parental cibisatamab control. The key endpoint will be the comparison of cell lysis mediated by the two antibodies. It is hypothesized that the parental cibisatamab will induce significant, dose-dependent lysis of these normal CEA-expressing cells, reflecting its known GI toxicity. In stark contrast, it is expected that BSP-10-CIBISATAMAB, due to its low affinity for normal CEA glycoforms, will induce substantially less T-cell-mediated cytotoxicity, even at high concentrations. A significant rightward shift in the EC50 curve (e.g., >50-fold or >100-fold) for BSP-10-CIBISATAMAB compared to cibisatamab in this assay would provide strong in vitro evidence of its reduced potential for on-target, off-tumor toxicity and its superior safety profile."
+    },
+    {
+      "id": "Example 6",
+      "type": "prophetic",
+      "text": "In Vivo Efficacy and Tolerability in a Colorectal Cancer Xenograft Model. The anti-tumor efficacy and safety of BSP-10-CIBISATAMAB will be evaluated in vivo. Immunodeficient mice (e.g., NOD-scid gamma mice) will be subcutaneously inoculated with a CEA-positive human colorectal cancer cell line (e.g., LS174T). Once tumors are established, the mice will be engrafted with human PBMCs to provide a human immune effector cell component. The mice will then be randomized into treatment groups to receive intravenous injections of either: (1) vehicle control, (2) parental cibisatamab, or (3) BSP-10-CIBISATAMAB. Treatments will be administered once or twice weekly for several weeks. Tumor volume will be measured regularly with calipers to assess anti-tumor efficacy. It is expected that both BSP-10-CIBISATAMAB and parental cibisatamab will lead to significant tumor growth inhibition or regression compared to the vehicle control. Concurrently, animal well-being and toxicity will be closely monitored. This will include recording body weight, clinical signs of distress (e.g., hunched posture, ruffled fur), and monitoring for signs of GI toxicity like diarrhea. At the end of the study, GI tract tissues will be collected for histopathological analysis to assess for signs of inflammation, epithelial damage, and T-cell infiltration. The primary hypothesis is that the BSP-10-CIBISATAMAB treatment group will exhibit a superior tolerability profile, characterized by less body weight loss and significantly reduced GI pathology compared to the parental cibisatamab group, while maintaining comparable or superior anti-tumor activity. This would confirm the invention's potential to widen the therapeutic window in a clinical setting."
+    }
+  ],
+  "part6_embodiments": [
+    {
+      "no": 1,
+      "text": "An isolated bispecific antibody comprising a first antigen-binding domain that selectively binds to a tumor-associated glycoform of human carcinoembryonic antigen (CEA) and a second antigen-binding domain that binds to human CD3."
+    },
+    {
+      "no": 2,
+      "text": "The antibody of embodiment 1, wherein the antibody has a binding affinity for the tumor-associated glycoform of CEA that is at least 10-fold greater than its binding affinity for a non-tumor-associated glycoform of CEA."
+    },
+    {
+      "no": 3,
+      "text": "The antibody of embodiment 2, wherein the binding affinity for the tumor-associated glycoform of CEA is at least 50-fold greater."
+    },
+    {
+      "no": 4,
+      "text": "The antibody of embodiment 2, wherein the binding affinity for the tumor-associated glycoform of CEA is at least 100-fold greater."
+    },
+    {
+      "no": 5,
+      "text": "The antibody of any one of the preceding embodiments, wherein the tumor-associated glycoform of CEA is from a colorectal cancer cell."
+    },
+    {
+      "no": 6,
+      "text": "The antibody of any one of the preceding embodiments, wherein the non-tumor-associated glycoform of CEA is from a normal gastrointestinal epithelial cell."
+    },
+    {
+      "no": 7,
+      "text": "The antibody of any one of the preceding embodiments, wherein the first antigen-binding domain binds an epitope comprising a portion of the CEA polypeptide and a carbohydrate moiety."
+    },
+    {
+      "no": 8,
+      "text": "The antibody of embodiment 1, wherein the first antigen-binding domain comprises a heavy chain variable region (VH) and a light chain variable region (VL)."
+    },
+    {
+      "no": 9,
+      "text": "The antibody of embodiment 8, wherein the VH comprises a heavy chain complementarity-determining region 1 (HCDR1), a HCDR2, and a HCDR3."
+    },
+    {
+      "no": 10,
+      "text": "The antibody of embodiment 8 or 9, wherein the VL comprises a light chain complementarity-determining region 1 (LCDR1), a LCDR2, and a LCDR3."
+    },
+    {
+      "no": 11,
+      "text": "The antibody of embodiment 1, wherein the second antigen-binding domain is a single-chain variable fragment (scFv)."
+    },
+    {
+      "no": 12,
+      "text": "The antibody of embodiment 1, wherein the antibody is in a 2+1 format, comprising two antigen-binding domains that selectively bind the tumor-associated glycoform of CEA and one antigen-binding domain that binds CD3."
+    },
+    {
+      "no": 13,
+      "text": "The antibody of embodiment 1, wherein the antibody is an IgG-scFv fusion protein."
+    },
+    {
+      "no": 14,
+      "text": "The antibody of any one of the preceding embodiments, having a predicted aqueous solubility score of greater than 0.85 as determined by the NetSolP algorithm."
+    },
+    {
+      "no": 15,
+      "text": "The antibody of any one of the preceding embodiments, having a predicted melting temperature (Tm) of greater than 65\u00b0C."
+    },
+    {
+      "no": 16,
+      "text": "The antibody of any one of the preceding embodiments, which mediates T-cell killing of CEA-expressing cancer cells in vitro."
+    },
+    {
+      "no": 17,
+      "text": "The antibody of embodiment 16, wherein the CEA-expressing cancer cells are colorectal cancer cells."
+    },
+    {
+      "no": 18,
+      "text": "The antibody of any one of the preceding embodiments, which induces less T-cell mediated lysis of normal gastrointestinal epithelial cells than a non-glycoform-selective anti-CEA/CD3 bispecific antibody."
+    },
+    {
+      "no": 19,
+      "text": "An isolated nucleic acid molecule encoding the antibody of any one of embodiments 1-18."
+    },
+    {
+      "no": 20,
+      "text": "An expression vector comprising the nucleic acid molecule of embodiment 19."
+    },
+    {
+      "no": 21,
+      "text": "A host cell comprising the expression vector of embodiment 20."
+    },
+    {
+      "no": 22,
+      "text": "A method of producing the antibody of embodiment 1, comprising culturing the host cell of embodiment 21 under conditions suitable for expression of the antibody, and recovering the antibody."
+    },
+    {
+      "no": 23,
+      "text": "A pharmaceutical composition comprising the antibody of any one of embodiments 1-18 and a pharmaceutically acceptable carrier."
+    },
+    {
+      "no": 24,
+      "text": "The pharmaceutical composition of embodiment 23, formulated for intravenous or subcutaneous administration."
+    },
+    {
+      "no": 25,
+      "text": "A method of treating a CEA-expressing cancer in a subject in need thereof, the method comprising administering to the subject a therapeutically effective amount of the antibody of any one of embodiments 1-18 or the pharmaceutical composition of embodiment 23."
+    },
+    {
+      "no": 26,
+      "text": "The method of embodiment 25, wherein the cancer is colorectal cancer."
+    },
+    {
+      "no": 27,
+      "text": "The method of embodiment 25, wherein the cancer is selected from the group consisting of gastric cancer, pancreatic cancer, lung cancer, and breast cancer."
+    },
+    {
+      "no": 28,
+      "text": "The method of any one of embodiments 25-27, wherein administration of the antibody results in inhibition of tumor growth."
+    },
+    {
+      "no": 29,
+      "text": "The method of any one of embodiments 25-28, wherein the subject exhibits reduced gastrointestinal toxicity as compared to treatment with a non-glycoform-selective anti-CEA/CD3 bispecific antibody."
+    },
+    {
+      "no": 30,
+      "text": "Use of the antibody of any one of embodiments 1-18 in the manufacture of a medicament for the treatment of a CEA-expressing cancer."
+    },
+    {
+      "no": 31,
+      "text": "The antibody of any one of embodiments 1-18 for use in a method of treating a CEA-expressing cancer."
+    },
+    {
+      "no": 32,
+      "text": "The antibody for use of embodiment 31, wherein the cancer is colorectal cancer."
+    }
+  ],
+  "part7_claims_optional": {
+    "included": true,
+    "claims_text": "WHAT IS CLAIMED IS:\n\n1. An isolated bispecific antibody, comprising:\n  (a) a first antigen-binding domain that selectively binds to a tumor-associated glycoform of human carcinoembryonic antigen (CEA); and\n  (b) a second antigen-binding domain that binds to human CD3.\n\n2. The antibody of claim 1, wherein the antibody exhibits a binding affinity for said tumor-associated glycoform of CEA that is at least 10-fold greater than its binding affinity for a non-tumor-associated glycoform of CEA from a normal gastrointestinal epithelial cell.\n\n3. The antibody of claim 2, wherein the binding affinity is at least 50-fold greater.\n\n4. The antibody of claim 1, wherein the first antigen-binding domain recognizes an epitope comprising a CEA polypeptide sequence and a carbohydrate moiety.\n\n5. The antibody of claim 1, wherein the first antigen-binding domain comprises a heavy chain variable region (VH) and a light chain variable region (VL).\n\n6. The antibody of claim 5, wherein the VH comprises three heavy chain complementarity-determining regions (HCDRs).\n\n7. The antibody of claim 5, wherein the VL comprises three light chain complementarity-determining regions (LCDRs).\n\n8. The antibody of claim 1, wherein the second antigen-binding domain that binds to human CD3 is a single-chain variable fragment (scFv).\n\n9. The antibody of claim 1, wherein the antibody has a 2+1 format comprising two of the first antigen-binding domain and one of the second antigen-binding domain.\n\n10. The antibody of claim 1, wherein the antibody is an IgG-scFv fusion.\n\n11. The antibody of claim 1, having a predicted thermal melting temperature (Tm) of 65\u00b0C or greater.\n\n12. The antibody of claim 1, having a predicted aqueous solubility score of 0.85 or greater.\n\n13. An isolated nucleic acid encoding the antibody of claim 1.\n\n14. An expression vector comprising the nucleic acid of claim 13.\n\n15. A host cell comprising the expression vector of claim 14.\n\n16. A pharmaceutical composition comprising the antibody of claim 1 and a pharmaceutically acceptable carrier.\n\n17. The pharmaceutical composition of claim 16, formulated for parenteral administration.\n\n18. A method of treating a CEA-expressing cancer in a subject, the method comprising administering to the subject a therapeutically effective amount of the antibody of claim 1.\n\n19. The method of claim 18, wherein the CEA-expressing cancer is colorectal cancer.\n\n20. The method of claim 18, wherein the CEA-expressing cancer is selected from the group consisting of gastric cancer, pancreatic cancer, and lung cancer.\n\n21. The method of claim 18, wherein administering the antibody mediates T-cell killing of cancer cells expressing CEA.\n\n22. The method of claim 18, wherein administering the antibody results in inhibition of tumor growth.\n\n23. The method of claim 18, wherein the administration results in reduced gastrointestinal toxicity compared to administration of a non-glycoform-selective anti-CEA/CD3 bispecific antibody.\n\n24. The antibody of claim 1, wherein the tumor-associated glycoform of CEA is expressed by a colorectal cancer cell.\n\n25. The antibody of claim 2, wherein the non-tumor-associated glycoform of CEA is expressed on the surface of a non-cancerous colonic epithelial cell."
+  }
+}
